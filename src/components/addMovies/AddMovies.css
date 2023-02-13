@@ -1,0 +1,15 @@
+.divb{
+  display:flex;
+  justify-content: center;
+ width: 100%;
+ margin-bottom: 30px;
+}
+.addd{
+  display:flex;
+  justify-content: center;
+  width: 20%;
+}
+.col{
+  background-color: #056d48;
+  
+}
