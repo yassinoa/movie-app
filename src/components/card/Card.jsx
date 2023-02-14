@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Rating } from 'react-simple-star-rating'
-const Card = ({el , supp}) => {
-  const [rating, setRating] = useState(3)
+import { del_mv } from '../../redux/action'
+const Card = ({el}) => {
+  const {movie}=useSelector(state=>state)
+  const dispatch=useDispatch()
+  // const [rating, setRating] = useState(3)
   
   // Catch Rating value
-  const handleRating = (rate) => {
-    setRating(rate)
+  // const handleRating = (rate) => {
+  //   setRating(rate)
 
-    // other logic
-  }
+  //   // other logic
+  // }
   
   return (
     <div className="containerr">
@@ -25,7 +29,7 @@ const Card = ({el , supp}) => {
                     <Link to={`/decription/${el.id}`}>
                      <button  className='detail but'>More detail</button>
                      </Link>
-                    <button onClick={()=>supp(el.id)} className='del but'>Delete</button>
+                    <button onClick={()=>dispatch(del_mv(el.id))} className='del but'>Delete</button>
                 </div>
               </div>
             </div>

@@ -1,0 +1,6 @@
+export const SEARCH_MV="SEARCH_MV"
+export const FILTER_MV="FILTER_MV"
+export const DELETE_MV="DELETE_MV"
+export const ADD_MV="ADD_MV"
+export const SETRATE="SETRATE"
+export const SETINP="SETINP"

@@ -5,6 +5,7 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .img{
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
@@ -16,7 +17,15 @@
 .top{
   display: flex;
   width: 70%;
+  margin-bottom:50px
 }
-.detail{
-  color:white
+.top >iframe{
+  border-radius: 10px;
+}
+.detailss{
+  color:white;
+  width:80%;
+  padding :20px;
+  border-radius: 10px;
+  background-color: #338e98;
 }
